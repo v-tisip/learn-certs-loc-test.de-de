@@ -1,32 +1,49 @@
 {
-  "docsets_to_publish": [],
-  "notification_subscribers": [],
-  "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
-    
+  "docsets_to_publish": [
+    {
+      "docset_name": "learn-pr-test",
+      "build_source_folder": "learn-certs-test",
+      "build_output_subfolder": "learn-certs-test",
+      "locale": "de-de",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Certification": "Content",
+        "Conceptual": "Content",
+        "ContentBrowser": "Content",
+        "Course": "Content",
+        "Examination": "Content",
+        "ExamPricing": "Toc"
+        
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
   ],
-  "continue_with_document_error": true,
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pl-PL",
+      "url": "https://github.com/Microsoft/templates.docs.msft.de-de",
       "branch": "master",
       "branch_mapping": {}
     },
-    {
+      {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/MicrosoftDocs/azure-docs-test2-pr",
-      "branch": "live",
+      "url": "https://github.com/MicrosoftDocs/learn-certs-loc-test",
+      "branch": "master",
       "branch_mapping": {
         "live": "live",
         "master": "master"
+        }
       }
-    }
   ],
-  "need_generate_pdf_url_template": false,
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false
 }
